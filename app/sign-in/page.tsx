@@ -1,7 +1,7 @@
 import React from 'react';
 import SignInBtn from "@/components/SignInBtn";
 
-const Page = () => {
+const SignIn = () => {
     return (
         <div>
           <SignInBtn/>
@@ -9,4 +9,4 @@ const Page = () => {
     );
 };
 
-export default Page;
+export default SignIn;

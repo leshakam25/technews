@@ -1,3 +1,5 @@
+// export const postsData = []
+
 export const postsData = [
     {
         id: "1",
