@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const Navbar = () => {
     const {status, data: session} = useSession();
-    const [isPopupVisible, setIsPopupVisible] = useState(true)
+    const [isPopupVisible, setIsPopupVisible] = useState(false)
     const popupRef = useRef<HTMLDivElement | null>(null);
 
     useEffect(()=>{
@@ -23,7 +23,7 @@ const Navbar = () => {
         }
 
         return () => {
-            document.addEventListener('click', handleClickOutside)
+            document.removeEventListener('click', handleClickOutside)
         }
 
     }, [isPopupVisible])
